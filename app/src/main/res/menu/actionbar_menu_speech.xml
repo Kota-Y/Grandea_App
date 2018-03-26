@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/to_summary"
+        android:icon="@drawable/summary_icon_white"
+        android:title="to_summary"
+        android:iconTint="@color/mainText"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/node_icon"
+        android:icon="@drawable/bubble_icon_white"
+        app:showAsAction="always"
+        android:title="bubble" />
+
+</menu>

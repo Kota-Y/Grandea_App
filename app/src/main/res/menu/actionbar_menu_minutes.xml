@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.original.haruyai.brainstorming3.Summary">
+    <item
+        android:id="@+id/bubble_icon"
+        android:icon="@drawable/bubble_icon_white"
+        android:title="bubble_icon"
+        android:iconTint="@color/mainText"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="share"
+        app:showAsAction="always"
+
+        android:onClick="share"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+
+</menu>

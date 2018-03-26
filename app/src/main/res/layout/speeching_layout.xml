@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+    <!--<TextView
+        android:id="@+id/summary"
+
+        android:layout_width="310dp"
+        android:layout_height="550dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="left|top"
+        android:textColor="#555555"
+
+        android:textSize="12dp"
+        />-->
+
+    <!--
+    <Button
+        android:id="@+id/ssButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/summary_start_button"
+        android:text="START"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+        -->
+    <!-- backgroundに@nullを入れることで背景が透明になる -->
+    <com.gigamole.library.PulseView
+        android:id="@+id/pv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_below="@+id/hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:pv_alpha="30"
+        app:pv_color="@color/colorAccent"
+        app:pv_icon="@drawable/ffffff"
+        app:pv_icon_height="10dp"
+        app:pv_icon_width="10dp"
+        app:pv_interpolator="@android:anim/linear_interpolator"
+        app:pv_measure="height"
+        app:pv_spawn_period="1250" />
+
+    <ImageButton
+        android:id="@+id/mic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_above="@+id/finishButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@null"
+        android:src="@drawable/ic_mic_black_48dp"
+        android:tint="@color/colorAccent" />
+
+    <!--
+    <ImageButton
+        android:id="@+id/play_pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/pv"
+        android:layout_marginBottom="63dp"
+        android:layout_marginStart="65dp"
+        android:layout_toEndOf="@+id/mic"
+        android:background="@null"
+        android:src="@drawable/ic_play_circle_filled_black_48dp"
+        android:tint="@color/colorAccent"
+        android:visibility="invisible" />
+        -->
+
+    <TextView
+        android:id="@+id/hint"
+
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:visibility="visible" />
+
+    <!-- 時間計測用 -->
+    <Chronometer
+        android:id="@+id/recording_time"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+
+        android:layout_above="@+id/finishButton"
+        android:layout_alignStart="@+id/mic"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/for_finishbutton"
+        android:text="会議終了"
+        android:textColor="#777777"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

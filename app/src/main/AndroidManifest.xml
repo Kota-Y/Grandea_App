@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.original.haruyai.brainstorming3">
+
+    <!-- パーミッション -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- ネットワーク使用のためのパーミッション -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/round_icon3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.original.haruyai.brainstorming3.SplashActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.original.haruyai.brainstorming3.MainActivity"
+            android:label="speech" >
+        </activity>
+        <activity
+            android:name="com.original.haruyai.brainstorming3.Mapping"
+            android:label="Mapping" >
+        </activity>
+        <activity
+            android:name="com.original.haruyai.brainstorming3.Summary"
+            android:label="Summary" >
+        </activity>
+
+        <activity
+            android:name="com.original.haruyai.brainstorming3.SpeechRecognition"
+            android:label="SpeechRecognition" >
+        </activity>
+
+        <activity
+            android:name="com.original.haruyai.brainstorming3.ListActivity"
+            android:label="ListActivity" >
+        </activity>
+        <activity
+            android:name="com.original.haruyai.brainstorming3.DataInputActivity"
+            android:label="DataInputActivity" >
+        </activity>
+        <activity
+            android:name="com.original.haruyai.brainstorming3.CustomPrintActivity"
+            android:label="CustomPrintActivity" >
+        </activity>
+    </application>
+
+</manifest>
